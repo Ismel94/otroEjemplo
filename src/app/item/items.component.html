@@ -1,0 +1,12 @@
+<ActionBar title="Listado de Piezas"> </ActionBar>
+
+<GridLayout>
+  <ListView [items]="piezas">
+    <ng-template let-item="item">
+      <StackLayout [nsRouterLink]="['/item', item.id]">
+        
+        <Label [text]="item.id +'. '+ item.nombre"></Label>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>
