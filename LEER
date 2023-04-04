@@ -1,0 +1,3 @@
+Proyecto Practico Native Script + Angular. Crud básico de Piezas conectado con un Back-end en Spring Boot y Base Datos Postgres
+
+En el servicio item.service, en la línea 12, tengo la url del servidor. En mi caso la IP del servidor.
