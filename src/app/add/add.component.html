@@ -1,0 +1,26 @@
+<FlexboxLayout class="form" [formGroup]="formulario" flexDirection="column">
+    
+        <FlexboxLayout class="m-15">
+            <TextField hint="Escriba su nombre" secure="false" returnKeyType="done" formControlName="nombre"
+                 autocorrect="false" maxLength="10">
+            </TextField>
+        </FlexboxLayout>
+
+        <FlexboxLayout class="m-15">
+            <TextField hint="Escriba el Precio" secure="false" returnKeyType="done" keyboardType="number"
+                formControlName="precio" autocorrect="false" maxLength="10">
+            </TextField>
+        </FlexboxLayout>
+
+        <FlexboxLayout class="m-15">
+            <Switch checked="true" formControlName="importada"></Switch>
+        </FlexboxLayout>
+
+        <FlexboxLayout class="m-15">
+            <Button class="button" text="Guardar" (tap)="enviar()"></Button>
+        </FlexboxLayout>
+</FlexboxLayout>
+
+<!-- 
+    ngDefaultControl
+-->
